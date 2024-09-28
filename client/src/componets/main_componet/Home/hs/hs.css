@@ -1,0 +1,92 @@
+/* Add your global styles above if any */
+
+.homeslide-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.homeslide-images-container {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+}
+
+.homeslide-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 1000px;
+  border-radius: 10px; /* Added border-radius for rounded edges */
+  transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
+
+.homeslide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease; /* Adjusted transition duration */
+  border-radius: 10px; /* Added border-radius for rounded edges */
+}
+
+.homeslide-image-container:hover .homeslide-image {
+  transform: rotateY(10deg); /* Rotate the image on hover */
+}
+
+.homeslide-image-container.flipped .homeslide-image {
+  transform: rotateY(180deg);
+}
+
+.homeslide-text-container {
+  flex: 1;
+  background: linear-gradient(to right, rgba(40, 40, 40, 0.9), rgba(70, 70, 70, 0.9));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.homeslide-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  opacity: 0; /* Initial opacity for fade-in animation */
+  animation: fadeInUp 1s ease-out forwards; /* Added fadeInUp animation */
+}
+
+.homeslide-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0; /* Initial opacity for fade-in animation */
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Added fadeInUp animation with delay */
+}
+
+.homeslide-text button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0; /* Initial opacity for fade-in animation */
+  animation: fadeInUp 1s ease-out 1s forwards; /* Added fadeInUp animation with delay */
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

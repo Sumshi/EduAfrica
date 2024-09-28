@@ -1,0 +1,82 @@
+/* FAQSection.css */
+
+.faq-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px; 
+  color: white;
+}
+
+.faq-section {
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Updated to start from the left */
+  flex-wrap: wrap;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.faq-header h2 {
+  font-size: 3em;
+  flex: 0 1 100%;
+  text-align: left;
+}
+
+.faq-header h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.faq-header img {
+  width: 220px;
+  margin-left: auto;
+  order: 2; /* Set the image to appear last */
+}
+
+.faq-list {
+  border-top: 1px solid #ccc;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  font-size: 1.2em;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: white;
+}
+
+.faq-question.active + .faq-answer {
+  display: block;
+}

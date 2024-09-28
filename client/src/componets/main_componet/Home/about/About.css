@@ -1,0 +1,86 @@
+.about {
+  background-color: #f8f8f8; /* Background color for the entire section */
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Container for image and information */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for the image container */
+.about-image {
+  flex: 1;
+  margin-bottom: 20px; /* Add spacing between image and text */
+  height: 550px; /* Set a fixed height for the image */
+}
+
+/* Styling for the image */
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: Add some border radius for a nicer look */
+}
+
+/* Styling for the information container */
+.about-info {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px; /* Add padding to the text container */
+  position: relative; /* Required for pseudo-element */
+}
+
+/* Styling for the heading */
+.about-info h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Styling for paragraphs */
+.about-info p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+.learn-more-btn {
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px; /* Adjust vertical spacing as needed */
+  left: calc(50% - 420px);
+}
+
+.learn-more-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Fading effect */
+.about-info::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; /* Height of the fading effect */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Gradient for fade effect */
+  pointer-events: none; /* Allow clicks to pass through the pseudo-element */
+  transition: height 0.5s ease; /* Transition for fading effect */
+  z-index: 1;
+}

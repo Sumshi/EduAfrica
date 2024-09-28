@@ -1,0 +1,103 @@
+/* HowItWorks.css */
+
+/* How It Works Section */
+.how-it-works {
+  background: #001f3f;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Steps Container */
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+  height: 540px; /* Fixed height for steps */
+  margin-top: 20px; /* Margin from the top */
+}
+
+/* Individual Step */
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  position: relative;
+}
+
+/* Step Number Icon */
+.step-icon {
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #001f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Step Image */
+.step-image {
+  filter: brightness(150%) sepia(100%) hue-rotate(180deg) invert(1);/* Change the color */
+  width: 80px; /* Set the width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Change the image to a block element */
+  margin-bottom: 20px; /* Margin between image and text */
+  margin-top: 10px; /* Margin from the top */
+  margin-left: auto; /* Align image to the right */
+  margin-right: auto; /* Align image to the left */
+}
+
+/* Step Titles */
+.step h3 {
+  font-size: 1.5rem; /* Adjust font size */
+  margin-bottom: 5px; /* Reduce margin bottom */
+  font-weight: bold;
+}
+
+/* Step Descriptions */
+.step p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Adjust margin between title and description */
+}
+
+/* Arrow Icons */
+.arrow-right::after {
+  content: '\2192'; /* Unicode for right arrow */
+  position: absolute;
+  font-size: 3rem; /* Increase the font size for a bigger arrow */
+  top: 50%;
+  left: calc(100% + 45px); /* Increase the space from the step */
+  transform: translateY(-50%) translateX(0); /* Initially, the arrow is not visible */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.step:hover .arrow-right::after,
+.step:focus .arrow-right::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(10px); /* Move arrow 10px to the right on hover/focus */
+}

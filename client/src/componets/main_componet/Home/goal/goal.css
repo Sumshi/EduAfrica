@@ -1,0 +1,88 @@
+/* goal.css */
+
+.hero {
+  background: #001f3f; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  color: #fff;
+}
+
+.maincards {
+  width: 300px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+
+.maincards.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.maincards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.maincards h2 {
+  color: #000;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.maincards p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.imagecontainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.font-sm {
+  font-size: 0.9rem;
+}
+
+.font-qicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.imagecontainer img {
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  border-radius: 8px;
+}
+
+/* See More Button */
+.see-more-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+.see-more-button:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease-in-out;
+  transform: 
+}
+
+.arrow {
+  font-size: 20px; /* Adjust the size of the arrow */
+  transition: transform 0.3s ease; /* Add transition for smoother movement */
+}

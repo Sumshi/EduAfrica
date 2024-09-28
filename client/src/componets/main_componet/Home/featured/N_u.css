@@ -1,0 +1,85 @@
+/* N_u.css */
+
+/* Styles for the sponsorship slider container */
+.sponsorships-carousel {
+  padding: 20px;
+}
+
+/* Styles for individual sponsorship slides */
+.sponsorship-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Center text */
+}
+
+.sponsorship-content {
+  flex: 1;
+}
+
+.sponsorship-name,
+.sponsorship-details,
+.sponsorship-amount {
+  color: white; /* Set text color to white */
+}
+
+.sponsorship-name {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.sponsorship-details {
+  font-size: 1rem;
+  margin-bottom: 10px;
+
+}
+
+.sponsorship-amount {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff; /* Adjust color as needed */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 150px;
+}
+
+.apply-button:hover {
+  background-color: #0056b3; /* Adjust color as needed */
+}
+
+/* Styles for the sponsorship header */
+.sponsorship-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sponsorship-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: white; /* Change to white */
+}
+
+.sponsorship-description {
+  font-size: 1.2rem;
+  color: white; /* Change to white */
+}
+
+/* Styles for Swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important; /* Change arrow color to white */
+}
+
+/* Styles for Swiper pagination dots */
+.swiper-pagination-bullet {
+  background-color: white !important; /* Change pagination dot color to white */
+}
+

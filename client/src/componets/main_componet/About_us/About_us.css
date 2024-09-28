@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Roboto:ital,wght@0,300;0,700;1,400;1,700&display=swap");
+
+.text {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.8rem;
+}
+.about-us {
+  margin-top: 100px;
+  font-family: "Quicksand", sans-serif;
+  padding: 2rem 5rem;
+}
+
+.about-us .about {
+  font-family: "Quicksand";
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-us .missionVisionStat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding-top: 3rem;
+}
+
+.about-us .missionVisionStat .statement {
+  /* border: 0.1rem solid grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 1.2rem 5rem;
+}
+
+.about-us .missionVisionStat .two {
+  flex-direction: row-reverse;
+  width: calc(100vw - 20px);
+  background-color: rgb(224, 237, 242);
+}
+.missionVisionStat .statement .mission-statement {
+  width: 700px;
+}
+
+.missionVisionStat .statement .vision-statement {
+  width: 700px;
+}
+
+.about-us .missionVisionStat .statement h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  margin-bottom: 10px;
+}
+
+.missionVisionStat .statement .illustration {
+  width: 450px;
+}
+
+.about-us .team-members {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.team-members h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.team-members .team {
+  display: flex;
+  gap: 50px;
+}
+
+.team .member {
+  width: 24vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .member h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+}
+
+.team .member .profile-pic {
+  border-radius: 3rem;
+  border: 0.8rem solid #ffffff;
+  text-align: center;
+}
+
+.team .member .role {
+  font-size: 1.2rem;
+  font-family: "Archivo";
+  display: flex;
+  gap: 5px;
+}

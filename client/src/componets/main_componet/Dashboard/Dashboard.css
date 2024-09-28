@@ -1,0 +1,26 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff; /* Text color for username and logout button */
+}
+
+.user-greeting {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #555; /* Text color for username */
+}
+
+.logout-button {
+  background-color: #dc3545; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Hover background color */
+}

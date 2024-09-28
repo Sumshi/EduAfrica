@@ -1,0 +1,148 @@
+/* Add your global styles above if any */
+
+
+footer {
+  background-color: #001f3f; /* Updated background color for better contrast */
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1rem; /* Increased font size for text */
+  margin-top: 0;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.support-section,
+.legal-section,
+.subscribe-section,
+.about-section {
+  width: 25%;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.support-section h3,
+.legal-section h3,
+.subscribe-section h3,
+.about-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem; /* Increased font size for heading */
+  font-weight: bold;
+}
+
+.support-links,
+.legal-links,
+.about-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.support-links a,
+.legal-links a,
+.about-links a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem; /* Increased font size for text */
+}
+
+.support-links a:hover,
+.legal-links a:hover,
+.about-links a:hover {
+  text-decoration: underline;
+}
+
+.subscribe-section input,
+.subscribe-section button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem; /* Increased font size for the button */
+  color: #ffffff; /* Text color for the button */
+  background-color: #27ae60; /* Updated button color for better contrast */
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.subscribe-section input::placeholder {
+  color: #ffffff; /* Set placeholder text color to white */
+}
+
+.subscribe-section button:hover {
+  background-color: #219a52; /* Hover color for the button */
+}
+
+/* Styles for the address and social sections */
+.address-social-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; /* Full width for the address and social sections */
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the content */
+}
+
+.address-section,
+.footer_socials {
+  width: 48%; /* Adjust the width as needed */
+}
+
+.address-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem; /* Increased font size for heading */
+  font-weight: bold;
+}
+
+.address-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address-info a {
+  display: flex;
+  flex-direction: column; /* Stack the icon and text vertically */
+  align-items: center; /* Center the content horizontally */
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.address-info a:hover {
+  text-decoration: underline;
+}
+
+.address-info svg {
+  margin-bottom: 0.5rem; /* Adjust spacing between icon and text */
+}
+
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the social links horizontally */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.footer_socials a {
+  background: #ffffff;
+  color: #3498db;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  border: 1px solid transparent;
+}
+
+.footer_socials a:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.footer_copy-right {
+  width: 100%;
+  margin-top: 2rem;
+}

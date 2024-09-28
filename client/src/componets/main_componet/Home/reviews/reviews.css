@@ -1,0 +1,80 @@
+/* reviews.css */
+
+#testimonials {
+  background-color: white;
+  background-image: url('../../../../assets/quote.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 80px;
+  padding: 40px 20px;
+  text-align: center;
+  height: 700px;
+  display: block;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial_container {
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust height as needed */
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.testimonial.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.client_avatar {
+  width: 250px; /* Increase avatar size */
+  height: 250px; /* Increase avatar size */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+
+.client_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client_position {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.client_review {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 10px;
+  color: #000;
+  font-style: italic;
+}

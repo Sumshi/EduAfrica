@@ -1,0 +1,38 @@
+/* Set the default font for the entire project */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Adjust grid template columns for hero container */
+.herocontainer {
+  grid-template-columns: 60% 60%;
+}
+
+/* Background styling for form content */
+.form-content {
+  background: url(../../assets/distance-learning.svg);
+  background-repeat: no-repeat; /* Repeat vertically */
+  background-position: left center; /* Center the background image on the left side vertically */
+  background-attachment: fixed;
+  background-size: auto 115%; /* Update to cover the entire form content */
+}
+
+/* Fieldset styling for form */
+fieldset {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/* Input styling for form */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin: 2px 4px;
+  width: 90%;
+}
+
+/* Adjust margin and height for hero container */
+.herocontainer {
+  height: calc(110vh - 258px);
+}
+
