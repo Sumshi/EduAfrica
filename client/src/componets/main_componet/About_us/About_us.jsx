@@ -58,63 +58,6 @@ const About_us = () => {
             </div>
           </section>
         </div>
-        <section className="team-members">
-          <h2>Team Members</h2>
-          <div className="team">
-            <div className="member">
-              <img
-                className="profile-pic"
-                src={Brian}
-                alt="Brian Sakwa"
-                title="Brian Sakwa"
-              />
-              <h3 className="name">Brian Sakwa</h3>
-              <p className="role">
-                <span>Role:</span>
-                <span>Backend Developer</span>
-              </p>
-            </div>
-            <div className="member">
-              <img
-                className="profile-pic"
-                src={Thomas}
-                alt="Nwodo Thomas"
-                title="Nwodo Thomas"
-              />
-              <h3 className="name">Nwodo Thomas</h3>
-              <p className="role">
-                <span>Role:</span>
-                <span>Backend Developer</span>
-              </p>
-            </div>
-            <div className="member">
-              <img
-                className="profile-pic"
-                src={Usaamah}
-                alt="Usaamah Ishola"
-                title="Usaamah Ishola"
-              />
-              <h3 className="name">Usaamah Ishola</h3>
-              <p className="role">
-                <span>Role:</span>
-                <span>Frontend Developer</span>
-              </p>
-            </div>
-            <div className="member">
-              <img
-                className="profile-pic"
-                src={Eric}
-                alt="Eric Obeng"
-                title="Eric obeng"
-              />
-              <h3 className="name">Eric Obeng</h3>
-              <p className="role">
-                <span>Role:</span>
-                <span>Frontend Developer</span>
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
       <Footer />
     </>
